@@ -1,7 +1,7 @@
 {
   "name": "fond-simulator",
   "version": "1.0.0",
-  "description": "a simulator for fond strategy.",
+  "description": "A simulator for fund strategy.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

@@ -4,7 +4,7 @@ import data from "./data.js";
 import { sellPoints, buyPoints } from "./myData";
 
 export default function App() {
-  const xData = data.map((e, i) => i + 1);
+  const xData = data.map((e, i) => i);
   const sellPointsData = sellPoints.map(e => ({
     coord: [e, data[e]]
   }));
