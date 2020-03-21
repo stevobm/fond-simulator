@@ -1,3 +1,7 @@
+/**
+ * 股票K线模拟生成
+ */
+
 const total = 10; //生成次数
 const init = 3000; //初始点数
 const range = 0.5; //每次波动幅度
