@@ -16,12 +16,10 @@ const buyRecords = data.map((c, i, a) => {
   }
   return 0;
 });
-console.info(buyRecords);
 
 const sellRecords = data.map((c, i, a) => {
   const amount = 10;
   const sell = i === 0 ? 0 : c > a[i - 1] ? amount : 0;
-
   if (sell && account - sell > 0) {
     lastSell = c;
     wallet += sell;
@@ -31,7 +29,9 @@ const sellRecords = data.map((c, i, a) => {
   return 0;
 });
 
-console.info(sellRecords);
+const exchangeRecord = buyRecords.map((e, i) => e - sellRecords[i]);
+
+console.info(exchangeRecord);
 
 console.info(wallet, account);
 
